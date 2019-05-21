@@ -1,0 +1,245 @@
+/*
+Theme Name: Firestarter 2.1 Working
+Theme URI: http://www.mccartin.info
+Author: John McCartin
+Author URI: http://mccartin.info/
+Description: An absolute bare-bones WordPress starter theme based on H5BP & Pure CSS
+Version: 2.0.0
+Tags: starter, h5bp, sass, pure
+
+No rights reserved.
+
+Workin in SASS.
+
+
+
+
+      ___           ___       ___       ___           ___     
+     /\  \         /\__\     /\__\     /\  \         |\__\    
+    /::\  \       /:/  /    /:/  /    /::\  \        |:|  |   
+   /:/\:\  \     /:/  /    /:/  /    /:/\:\  \       |:|  |   
+  /::\~\:\  \   /:/  /    /:/  /    /::\~\:\  \      |:|__|__ 
+ /:/\:\ \:\__\ /:/__/    /:/__/    /:/\:\ \:\__\     /::::\__\
+ \/__\:\/:/  / \:\  \    \:\  \    \:\~\:\ \/__/    /:/~~/~   
+      \::/  /   \:\  \    \:\  \    \:\ \:\__\     /:/  /     
+      /:/  /     \:\  \    \:\  \    \:\ \/__/     \/__/      
+     /:/  /       \:\__\    \:\__\    \:\__\                  
+     \/__/         \/__/     \/__/     \/__/                  
+     
+      ___           ___           ___           ___           ___     
+     /\__\         /\  \         /\__\         /\  \         /\  \    
+    /:/  /        /::\  \       /:/  /        /::\  \       /::\  \   
+   /:/__/        /:/\:\  \     /:/  /        /:/\ \  \     /:/\:\  \  
+  /::\  \ ___   /:/  \:\  \   /:/  /  ___   _\:\~\ \  \   /::\~\:\  \ 
+ /:/\:\  /\__\ /:/__/ \:\__\ /:/__/  /\__\ /\ \:\ \ \__\ /:/\:\ \:\__\
+ \/__\:\/:/  / \:\  \ /:/  / \:\  \ /:/  / \:\ \:\ \/__/ \:\~\:\ \/__/
+      \::/  /   \:\  /:/  /   \:\  /:/  /   \:\ \:\__\    \:\ \:\__\  
+      /:/  /     \:\/:/  /     \:\/:/  /     \:\/:/  /     \:\ \/__/  
+     /:/  /       \::/  /       \::/  /       \::/  /       \:\__\    
+     \/__/         \/__/         \/__/         \/__/         \/__/    
+
+
+http://www.alleyhouseestudio.com
+
+
+
+
+My simplistic attempts at
+												  
+	  _|_|      _|_|      _|_|_|    _|_|_|    _|_|_|  
+	_|    _|  _|    _|  _|        _|        _|        
+	_|    _|  _|    _|  _|          _|_|      _|_|    
+	_|    _|  _|    _|  _|              _|        _|  
+	  _|_|      _|_|      _|_|_|  _|_|_|    _|_|_|   
+			  
+breaking from that model for where need be.
+                                                 
+    
+    
+
+  /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \__
+ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \_
+/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \__
+\ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / _
+ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ / 
+ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \_
+/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \__
+\ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / _
+ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ / 
+ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \_
+/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \__
+
+
+		
+
+		** Dependencies: Pure CSS (responsive rollup) http://purecss.io/
+		
+
+\ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / _
+ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ / 
+ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \_
+/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \__
+\ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / _
+ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ / 
+ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \_
+/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \__
+\ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / _
+ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ / 
+ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \_
+
+
+
+                _       _     _           
+__   ____ _ _ __(_) __ _| |__ | | ___  ___ 
+\ \ / / _` | '__| |/ _` | '_ \| |/ _ \/ __|
+ \ V / (_| | |  | | (_| | |_) | |  __/\__ \
+  \_/ \__,_|_|  |_|\__,_|_.__/|_|\___||___/
+
+*/
+
+
+
+$font-stack: Arial, "Lucida Grande", sans-serif;
+$primary-dark: #222;
+$primary-light: #fff;
+$mid-tone: #666;
+$mid-light: #ddd;
+$highlight: #1d606a;
+$base-size: 20px;
+$reader-size: 1.25em;
+$header-height: 8em;
+
+$mobile-break: 30em;
+$tablet-break: 48em;
+$desktop-break: 81.25em;
+
+/*
+
+ _                            _       
+(_)_ __ ___  _ __   ___  _ __| |_ ___ 
+| | '_ ` _ \| '_ \ / _ \| '__| __/ __|
+| | | | | | | |_) | (_) | |  | |_\__ \
+|_|_| |_| |_| .__/ \___/|_|   \__|___/
+            |_|                       
+*/
+
+
+@import 'border';
+@import 'dark';
+@import 'debug';
+@import 'menu';
+@import 'mp';
+@import 'positioners';
+@import 'text';
+@import 'zs';
+
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+	font-family: $font-stack;
+}
+
+::selection {
+  background: $highlight;
+  color: $primary-light;
+}
+::-moz-selection {
+  background: $highlight;
+  color: $primary-light;
+}
+
+body{
+	color: $primary-dark;
+  font-size: $base-size;
+  background: url('../img/mainst2.jpg') no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  color: $primary-dark;
+}
+
+a:hover {
+  background: $highlight;
+  color: $primary-light;
+}
+
+.link-on-dark {
+  color: $primary-light;
+}
+
+.link-no-decor {
+  text-decoration: none;
+}
+
+p:first-of-type {
+  margin-top: 0;
+}
+
+.pure-g > div {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.layout {
+  min-height: 100%;
+  position: relative;
+}
+
+.header-bar {
+  //height: $header-height;
+}
+
+.wrapper {
+  //padding-top: $header-height;
+}
+
+section {
+  padding-bottom: 1em;
+  border-bottom: 1px solid $primary-light;
+  margin-bottom: 2em;
+
+  &:last-of-type {
+    border-bottom: 0px;
+
+  }
+
+}
+
+.reader {
+  max-width: 700px;
+  //margin: 0px auto;
+}
+
+.title {
+  text-decoration: none;
+}
+
+
+.brand-title {
+  font-weight: 400;
+  font-size: 2em;
+	
+  a {
+    text-decoration: none
+  }
+}
+
+.goog-te-gadget {
+  position:  fixed;
+  top: 0;
+  right: 18px;
+  z-index: 1000000;
+
+}
+
+@import 'queries';

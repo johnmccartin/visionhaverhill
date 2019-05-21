@@ -1,0 +1,21 @@
+# Site wide configuration
+
+title: Vision Haverhill 2035
+locale: en_US
+description: An update to the master plan.
+logo: 
+search: true
+url: http://www.visionhaverhill2035.org
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: John McCartin
+  email: john.mccartin@gmail.com
