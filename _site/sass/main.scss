@@ -104,7 +104,7 @@ $primary-dark: #222;
 $primary-light: #fff;
 $mid-tone: #666;
 $mid-light: #ddd;
-$highlight: #1d606a;
+$highlight: #003250;
 $base-size: 20px;
 $reader-size: 1.25em;
 $header-height: 8em;
@@ -158,9 +158,9 @@ html, button, input, select, textarea,
 body{
 	color: $primary-dark;
   font-size: $base-size;
-  background: url('../img/mainst2.jpg') no-repeat center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  //background: url('../img/haverhill_bg.jpg') no-repeat center center;
+  //background-repeat: no-repeat;
+  //background-size: cover;
 }
 a {
   color: $primary-dark;
@@ -201,6 +201,11 @@ p:first-of-type {
 
 .wrapper {
   //padding-top: $header-height;
+}
+
+.logo {
+  max-width: 400px;
+  margin-left: -33px;
 }
 
 section {
