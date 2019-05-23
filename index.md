@@ -22,3 +22,10 @@ title: Vision Haverhill 2035
 
 </section>
 
+<section id="listening-tour">
+	<h2>Listening Tour</h2>
+	<p>In Summer 2019, Vision Haverhill 2035 will be engaged with the community through in-person and online surveys, tables at special events, focus groups, and more. Our goal is to collect input from as many voices as possible, with participants from all walks of life.</p>
+	<p>Sign up <a href="https://forms.gle/CvVWmNNhPphxBSYf7">here</a> to learn about opportunities to get involved in the process.</p>
+</section>
+
+
